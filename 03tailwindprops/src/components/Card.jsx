@@ -1,21 +1,12 @@
+import React from "react";
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Card from './components/card'
 
-function App() {
-  const [count, setCount] = useState(0)
-   const [play, setPlay] = useState(false)
 
-  return (
-       <>
-      <h1 className='bg-green-400 text-black p-4 rounded-2xl mb-5'>tailwind test</h1>
-
-      <Card/>
-      <Card/>
-
-      {/* <div className="border  w-[400px] glass rounded-xl flex">
+function Card(){
+       const [play, setPlay] = useState(false)
+    
+    return(
+        <div className="border  w-[400px] glass rounded-xl flex">
               <img
                 src="https://media4.giphy.com/media/BKv6EPd7ZCgmMg0iQK/giphy.gif?cid=ecf05e47dwh9vdr5bezeb3lbg1bqy8y3kfe61f2oopjxa2jw&rid=giphy.gif&ct=g"
                 alt="music"
@@ -86,9 +77,8 @@ function App() {
                   </button>
                 </div>
               </div>
-            </div> */}
-    </>
-  )
+            </div>
+    )
 }
 
-export default App
+export default Card;
